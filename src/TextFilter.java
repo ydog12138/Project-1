@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
 /**
- * TODO: DESCRIBE YOUR PROJECT HERE
+ * This program is used to manipulate Strings
  *
- * @author Your Name, youremail@purdue.edu
- * @version MM/DD/YY
+ * @author Haoran Yin yin143@purdue.edu
+ * @version 09/29/18-00
  */
 public class TextFilter {
 
@@ -169,7 +169,43 @@ public class TextFilter {
                 System.out.println("Uncensored: ");
                 System.out.println(passage);
 
-                // TODO: PART 3 - Implement your parsing here
+                String[] temp = passage.split("\n");
+                for (int i = 0; i < temp.length; i++) {
+                    if (temp[i].contains("Name: ")) {
+                        String[] nameTemp = temp[i].split(": ");
+                        String stars = "";
+                        for (int k = 1; k < nameTemp[1].length() - 1; k++) {
+                            if (nameTemp[1].charAt(k) != ' ')
+                                stars += "*";
+                            else
+                                stars += " ";
+                        }
+                        nameTemp[1] = nameTemp[1].charAt(0) + stars + nameTemp[1].charAt(nameTemp[1].length() - 1);
+                        temp[i] = String.join(": ", nameTemp);
+                    } else if (temp[i].contains("Phone: ")) {
+                        String[] tempPhone = temp[i].split(": ");
+                        tempPhone[1] = "***-***" + tempPhone[1].substring(7);
+                        temp[i] = String.join(": ", tempPhone);
+                    } else if (temp[i].contains("Email: ")) {
+                        String[] tempEmail = temp[i].split(": ");
+                        String[] emailAddress = tempEmail[1].split("@");
+                        int length = emailAddress[0].length();
+                        emailAddress[0] = emailAddress[0].substring(0, 1);
+                        for (int k = 1; k < length; k++) {
+                            emailAddress[0] += "*";
+                        }
+                        int indexOfDot = emailAddress[1].indexOf(".");
+                        String com = emailAddress[1].substring(indexOfDot);
+                        String stars = "";
+                        for (int z = 1; z < indexOfDot; z++) {
+                            stars += "*";
+                        }
+                        emailAddress[1] = emailAddress[1].substring(0, 1) + stars + com;
+                        tempEmail[1] = String.join("@", emailAddress);
+                        temp[i] = String.join(": ", tempEmail);
+                    }
+                }
+                passage = String.join("\n", temp);
 
                 // Print the censored passage
                 System.out.println("Censored: ");
@@ -182,12 +218,15 @@ public class TextFilter {
 
             }
 
-
             System.out.println("Would you like to keep filtering? Yes/No");
-
-            // TODO: PART 4 - Update the value of keepGoing accordingly
-            // TODO: PART 4 - Replace the line below with your code
-            keepFiltering = false;
+            keepFiltering = true;
+            String keepGo = "";
+            do {
+                keepGo = scanner.nextLine();
+            } while (keepGo.isEmpty());
+            if (!keepGo.equals("Yes")) {
+                keepFiltering = false;
+            }
 
         } while (keepFiltering);
 
