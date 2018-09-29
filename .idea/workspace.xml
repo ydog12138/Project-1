@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="de4b61a6-95ff-488e-99b1-90972cd41823" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/TextFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TextFilter.java" afterDir="false" />
-    </list>
+    <list default="true" id="de4b61a6-95ff-488e-99b1-90972cd41823" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,8 +55,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TextFilterPracticeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="34" column="75" lean-forward="true" selection-start-line="34" selection-start-column="75" selection-end-line="34" selection-end-column="75" />
+            <state relative-caret-position="285">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;class#TextFilterPracticeTest#0" />
@@ -93,7 +91,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1490" />
     <option name="width" value="1522" />
     <option name="height" value="1952" />
@@ -165,7 +163,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538260241698" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538260816027" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -197,7 +195,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TextFilter">
+  <component name="RunManager" selected="JUnit.TextFilterPracticeTest">
     <configuration name="TextFilter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TextFilter" />
       <module name="Project 1" />
@@ -219,8 +217,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TextFilter" />
         <item itemvalue="JUnit.TextFilterPracticeTest" />
+        <item itemvalue="Application.TextFilter" />
       </list>
     </recent_temporary>
   </component>
@@ -234,7 +232,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1538248854592</updated>
-      <workItem from="1538248860608" duration="10543000" />
+      <workItem from="1538248860608" duration="11205000" />
     </task>
     <servers />
   </component>
@@ -254,12 +252,15 @@
     <history-entry file="TextFilterPracticeTest - 2018.09.29 at 18h 25m 17s.xml">
       <configuration name="TextFilterPracticeTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TextFilterPracticeTest - 2018.09.29 at 18h 34m 56s.xml">
+      <configuration name="TextFilterPracticeTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10543000" />
+    <option name="totallyTimeSpent" value="11205000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1513" height="983" extended-state="6" />
+    <frame x="-6" y="-6" width="1513" height="983" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
@@ -316,8 +317,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TextFilterPracticeTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="34" column="75" lean-forward="true" selection-start-line="34" selection-start-column="75" selection-end-line="34" selection-end-column="75" />
+        <state relative-caret-position="285">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;class#TextFilterPracticeTest#0" />
